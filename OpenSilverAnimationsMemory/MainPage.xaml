@@ -1,0 +1,16 @@
+﻿<sdk:Page
+    x:Class="OpenSilverAnimationsMemory.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:local="clr-namespace:OpenSilverAnimationsMemory"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel x:Name="SP">
+        <ButtonBase x:Name="AnimateButton" Content="Animate" Click="AnimateButton_Click" />
+        <ButtonBase Click="Delete">Delete Rectangle</ButtonBase>
+        <ButtonBase Click="GCollect">GC</ButtonBase>
+        <local:TestRectangle Fill="Red" Width="100" Height="100" />
+    </StackPanel>
+</sdk:Page>
